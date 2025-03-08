@@ -1,8 +1,27 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Clinica"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Gestión</h2>
+
+<!-- Buscar paciente -->
+<form asp-action="BuscarPaciente" method="post">
+    <label for="Cedula">Cédula del Paciente:</label>
+    <input type="text" id="Cedula" name="Cedula" required />
+    <button type="submit">Buscar</button>
+</form>
+
+<!-- Registrar paciente -->
+<h3>Registro de Paciente</h3>
+<form asp-action="RegistrarPaciente" method="post">
+    <input type="text" name="Cedula" placeholder="Cédula" required />
+    <input type="text" name="Nombre" placeholder="Nombre" required />
+    <input type="text" name="Apellido" placeholder="Apellido" required />
+    <input type="text" name="Telefono" placeholder="Teléfono" required />
+    <input type="email" name="Correo_electronico" placeholder="Correo Electrónico" required />
+    <input type="text" name="Direccion" placeholder="Dirección" required />
+    <input type="date" name="Fecha_nacimiento" required />
+    <button type="submit">Registrar Paciente</button>
+</form>
+
+
