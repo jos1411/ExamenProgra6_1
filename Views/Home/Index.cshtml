@@ -24,4 +24,8 @@
     <button type="submit">Registrar Paciente</button>
 </form>
 
-
+<!-- Mostrar mensaje después de registrar el paciente -->
+@if (TempData["Mensaje"] != null)
+{
+    <p>@TempData["Mensaje"]</p>
+}

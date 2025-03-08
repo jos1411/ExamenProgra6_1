@@ -1,7 +1,12 @@
+using Clinica_Dental.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Inyectar AccesoDatos para que esté disponible en los controladores
+builder.Services.AddScoped<AccesoDatos>(); // Usamos AddScoped en lugar de AddSingleton
 
 var app = builder.Build();
 

@@ -9,10 +9,10 @@
         public string Telefono { get; set; }
         public string Correo_electronico { get; set; }
         public string Direccion { get; set; }
-        public System.DateTime Fecha_nacimiento { get; set; }
-        public System.DateTime Fecha_adicion { get; set; }
-        public string Adicionado_por { get; set; }
-        public System.DateTime? Fecha_modificacion { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public DateTime FechaAdicion { get; set; }
+        public string AdicionadoPor { get; set; }
+        public DateTime? Fecha_modificacion { get; set; }
         public string Modificado_por { get; set; }
     }
 }

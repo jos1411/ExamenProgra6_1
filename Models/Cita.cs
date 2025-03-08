@@ -4,7 +4,7 @@
     {
         public int Id_cita { get; set; }
         public int Id_paciente { get; set; }
-        public System.DateTime Fecha_hora { get; set; }
+        public DateTime FechaHora { get; set; }
         public string Motivo_consulta { get; set; }
         public string Estado { get; set; }
         public System.DateTime Fecha_adicion { get; set; }
