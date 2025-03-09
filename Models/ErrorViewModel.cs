@@ -7,3 +7,4 @@ namespace Clinica_Dental.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+ 
