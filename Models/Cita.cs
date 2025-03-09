@@ -2,14 +2,10 @@
 {
     public class Cita
     {
-        public int Id_cita { get; set; }
-        public int Id_paciente { get; set; }
+        public int IdCita { get; set; }
+        public int IdPaciente { get; set; }
         public DateTime FechaHora { get; set; }
-        public string Motivo_consulta { get; set; }
+        public string MotivoConsulta { get; set; }
         public string Estado { get; set; }
-        public System.DateTime Fecha_adicion { get; set; }
-        public string Adicionado_por { get; set; }
-        public System.DateTime? Fecha_modificacion { get; set; }
-        public string Modificado_por { get; set; }
     }
 }
