@@ -29,7 +29,7 @@ namespace Clinica_Dental.Models
                     cmd.Parameters.AddWithValue("@direccion", nuevoPaciente.Direccion);
                     cmd.Parameters.AddWithValue("@fecha_nacimiento", nuevoPaciente.FechaNacimiento);
 
-                    // Parámetro OUTPUT opcional (definido en el SP con valor por defecto)
+                    // Parámetro OUTPUT opcional
                     SqlParameter mensajeParam = new SqlParameter("@mensaje", SqlDbType.VarChar, 255)
                     {
                         Direction = ParameterDirection.Output
