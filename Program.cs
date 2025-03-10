@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Inyectar AccesoDatos para que esté disponible en los controladores.
-// Se usa AddScoped para crear una instancia por solicitud.
+// Se usa AddScoped para crear una instancia por solicitud.(Esto es para optimizar las solicitudes si recuerdo bien)
 builder.Services.AddScoped<AccesoDatos>();
 
 var app = builder.Build();
